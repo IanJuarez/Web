@@ -6,7 +6,7 @@
     <title>CriptoFlex</title>
     <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -14,9 +14,17 @@
         <div class="logo">
             <img src="imagenes/Logo_1.png" alt="Logo de la página">
         </div>
-        <button class="Menu" id="abrir_ple"><i class="bi bi-list"></i></button>
+        <button class="Menu" id="abrir_ple">
+            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
+          </svg>
+        </button>
         <nav class="hambur" id="Menu_ple">
-            <button class="cerrar" id="cerrar_ple"><i class="bi bi-arrow-right"></i></button>
+            <button class="cerrar" id="cerrar_ple">
+                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
+              </svg>
+            </button>
             <ul class="navs">
                 <li><a href="#">Inicio</a></li>
                 <li><a href="#">Acerca de</a></li>
@@ -101,9 +109,11 @@
     <footer>
         <p>Derechos de autor &copy; 2024 Página Moderna de Criptomonedas. Todos los derechos reservados.</p>
     </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="script.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
-<script>
-    AOS.init();
-</script>
+
 </html>
